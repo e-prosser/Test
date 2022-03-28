@@ -1,0 +1,124 @@
+/* GENERAL STYLE */
+html{
+    
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    text-align: center;
+}
+#content{
+    margin: 10;
+    padding: 10;
+    font-family: Arial;
+    text-align: center;
+    }
+
+#title{
+    text-align: center;
+}
+
+#map {
+    text-align: center;
+    height: 100%;
+    width: 100%;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    font-weight: bold;
+    padding: 0.5%;
+    text-decoration: underline;
+}
+
+.col-md-2per{ 
+    width: 2%; 
+}
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+    background-color:  #e9edee;
+}
+
+
+/* LOADING SCREEN */
+#loading {
+    background: url('spinner.gif') no-repeat center center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 9999999;
+}
+
+
+
+/* NAV BAR STLYE */
+.logo {
+  float: left;
+  left: 0px;
+  padding: 10px 0;
+  width: 12.5vw;
+}
+
+header {
+    background:  #1d7e74;
+}
+
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 23px;
+
+    position: relative;
+}
+
+nav a {
+    color: #444;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.75vw;
+    color: #FFFFFF;
+}
+
+nav a:hover {
+    color: #000;
+}
+
+nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: #444;
+
+    position: absolute;
+    top: 0;
+    width: 0%;
+
+    transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+    width: 100%;
+}

@@ -1,0 +1,57 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="container">
+<h1>Welcome</h1>
+
+
+<br><br>
+Intro to our project
+<br><br>
+Intro to each member
+
+
+  <div class="row">
+    <div class="col">
+    </div>
+    <div class="col">
+        <a href = "https://www.linkedin.com/in/evan-prosser/">
+          <img src="{{ url_for('static', filename = 'Images/Img1.jpg') }}" style="width:100%; border-radius: 50%">
+           <p class = "text-center">Jan Erik Naess</p>
+        </a>
+    </div>
+    <div class="col">
+    </div>
+    <div class="col">
+        <a href = "https://www.linkedin.com/in/evan-prosser/">
+          <img src="{{ url_for('static', filename = 'Images/Img1.jpg') }}" style="width:100%; border-radius: 50%">
+           <p class = "text-center">Jonah Prevost</p>
+        </a>
+    </div>
+    <div class="col">
+    </div>
+    <div class="col">
+        <a href = "https://www.linkedin.com/in/evan-prosser/">
+          <img src="{{ url_for('static', filename = 'Images/Img1.jpg') }}" style="width:100%; border-radius: 50%">
+           <p class = "text-center">Connor Jonhson</p>
+        </a>
+    </div>
+    <div class="col">
+    </div>
+    <div class="col">
+        <a href = "https://www.linkedin.com/in/evan-prosser/">
+          <img src="{{ url_for('static', filename = 'Images/Img1.jpg') }}" style="width:100%; border-radius: 50%">
+           <p class = "text-center">Evan Prosser</p>
+        </a>
+    </div>
+    <div class="col">
+    </div>
+  </div>
+
+
+<br><br>
+Thank you to people who helped
+
+</div>       
+{% endblock %}
+           
